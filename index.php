@@ -43,12 +43,13 @@ $message = isset($_GET['message']) ? $_GET['message'] : '';
 
   <div class="wrap-for-bg-image"></div>
   <div class="container main">
-      <h1>Travel to destinations that need you. <span style="color: #198754; text-transform: uppercase;">Help boost tourism</span> in undiscovered places</h1>
+      <h1>Travel to destinations that need you. <span style="color: #198754; text-transform: uppercase;">Help boost tourism</span> in lesser-known locations</h1>
        <p>Every year, popular tourist destinations attract the majority of visitors, leaving small towns and local businesses struggling. We focus on places that need a tourism boost to thrive. With our travel agency, you can explore these underserved destinations while finding affordable flights, accommodations, and activities. By booking with us, you're not only discovering new places, but you're also helping local communities grow and succeed.</p>
         <form action="../includes/waitlist.php" class="form_2" method="post" name="email">
         <input type="email" class="form-control me-2 input_2" placeholder="Email" name="email">
         <button class="btn btn-success input_2" type="submit">Join Waitlist</button>
         </form> 
+        
         <?php if ($status && $message): ?>
         <div style="margin-top: 20px;" class="alert <?php echo ($status == 'success') ? 'alert-success' : 'alert-danger'; ?>" role="alert">
             <?php echo htmlspecialchars($message); ?>
